@@ -1,0 +1,60 @@
+.task{
+    margin-top: 5px;
+    padding: 3px 3px 3px 10px;
+    z-index: 100;
+    border-left-width: 5px !important;
+    min-height: 45px;
+    overflow: auto;
+}
+
+.task a{
+    font-size: small;
+    margin-left: 5px;
+}
+
+.task p{
+    margin-bottom: 0;
+}
+
+.state{
+    min-height: 300px;
+    min-width: 250px;
+}
+
+.state.active {
+    border: thin dashed #75828c
+}
+
+.state.hover{
+    background-color: rgba(214, 238, 255, 0.31);
+}
+
+.Resolved{
+    background-color: rgba(218, 238, 211, 0.56);
+}
+
+.InProgress{
+    background-color: rgba(255, 241, 187, 0.56);
+}
+
+.Backlog{
+    background-color: white;
+}
+
+.del{
+    background-image: url(img/del_icon.png);
+    opacity: 0.6;
+    float: right;
+    display: none;
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.del:hover{
+    opacity: 0.9;
+}
+
+.task:hover .del, .newCol:hover .del {
+    display: inline-block;
+}

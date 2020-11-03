@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Scrum Board</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="common.css" rel="stylesheet">
+    <link rel="prefetch prerender" href="img/del_icon_red.png">
+</head>
+<body>
+
+<div class="container-fluid vh-100">
+    <div class="row my-3">
+        <div class="col-12">
+            <nav class="navbar rounded" style="background-color: #99abba;">
+                <h4>Scrum Board</h4>
+                <form class="form-inline">
+                    <label for="TaskName" class="mx-2">Add task</label>
+                    <input class="form-control" placeholder="Task name" id="TaskName" required>
+                    <div class="btn btn-dark mx-2" id="AddTask">Add</div>
+
+                    <label for="ColName" class="mx-2">Add column</label>
+                    <input class="form-control" placeholder="Column name" id="ColName" required>
+                    <div class="btn btn-dark mx-2" id="AddCol">Add</div>
+                </form>
+            </nav>
+        </div>
+    </div>
+    <div id="Content" class="row content mx-2">
+        <div class="col m-1 p-2 border rounded">
+            <h5>Backlog</h5><hr class="my-3">
+            <div id="Backlog" class="container rounded state">
+                <div class="task container border rounded Backlog">
+                    <p>Automate "Cloud backup" scenario</p>
+                    <a href="#" class="toBacklog text-primary">Backlog</a>
+                    <a href="#" class="toInProgress text-warning">In Progress</a>
+                    <a href="#" class="toResolved text-success">Resolved</a>
+                    <a href="#" class="del"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col m-1 p-2 border rounded">
+            <h5>In progress</h5><hr class="my-3">
+            <div id="InProgress" class="container rounded state">
+                <div class="task container border rounded InProgress">
+                    <p>Add step with incremental backup creation to "Update" UI test</p>
+                    <a href="#" class="toBacklog text-primary">Backlog</a>
+                    <a href="#" class="toInProgress text-warning">In Progress</a>
+                    <a href="#" class="toResolved text-success">Resolved</a>
+                    <a href="#" class="del"></a>
+                </div>
+
+                <div class="task container border rounded InProgress">
+                    <p>Add Win10 19H2 VM template to autotest environment</p>
+                    <a href="#" class="toBacklog text-primary">Backlog</a>
+                    <a href="#" class="toInProgress text-warning">In Progress</a>
+                    <a href="#" class="toResolved text-success">Resolved</a>
+                    <a href="#" class="del"></a>
+                </div>
+
+                <div class="task container border rounded InProgress">
+                    <p>Implement UI test for Media Builder</p>
+                    <a href="#" class="toBacklog text-primary">Backlog</a>
+                    <a href="#" class="toInProgress text-warning">In Progress</a>
+                    <a href="#" class="toResolved text-success">Resolved</a>
+                    <a href="#" class="del"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col m-1 p-2 border rounded">
+            <h5>Resolved</h5><hr class="my-3">
+            <div id="Resolved" class="container rounded state">
+                <div class="task container border rounded Resolved">
+                    <p>Support "account_manager_test.exe" tool in existing autotests</p>
+                    <a href="#" class="toBacklog text-primary">Backlog</a>
+                    <a href="#" class="toInProgress text-warning">In Progress</a>
+                    <a href="#" class="toResolved text-success">Resolved</a>
+                    <a href="#" class="del"></a>
+                </div>
+
+                <div class="task container border rounded Resolved">
+                    <p>Fix "TrueImage.exe" crash on backup source selection</p>
+                    <a href="#" class="toBacklog text-primary">Backlog</a>
+                    <a href="#" class="toInProgress text-warning">In Progress</a>
+                    <a href="#" class="toResolved text-success">Resolved</a>
+                    <a href="#" class="del"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+<script src="common.js"></script>
+
+</body>
+</html>
